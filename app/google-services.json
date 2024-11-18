@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "50008151853",
+    "project_id": "socialplus-8c20f",
+    "storage_bucket": "socialplus-8c20f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50008151853:android:9c9088153aac28e01165a4",
+        "android_client_info": {
+          "package_name": "com.example.social"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOrA3sl98SOem4oOmTDTlf2EnaFIt6nZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/navHome"
+            android:title="@string/home"/>
+    </group>
+
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/navMyProfile"
+            android:icon="@drawable/login_account_circle_24"
+            android:title="@string/my_profile"/>
+        <item
+            android:id="@+id/navPost"
+            android:icon="@drawable/drawer_post"
+            android:title="@string/post"/>
+
+        <item
+            android:id="@+id/navSearch"
+            android:icon="@drawable/darwer_search"
+            android:title="@string/search"/>
+    </group>
+
+    <group android:id="@+id/group3">
+        <item
+            android:id="@+id/navMessage"
+            android:icon="@drawable/drawer_message"
+            android:title="@string/message"/>
+    </group>
+
+    <group android:id="@+id/group4">
+        <item
+            android:id="@+id/navNotifications"
+            android:icon="@drawable/drawer_notification"
+            android:title="@string/notifications"/>
+        <item
+            android:id="@+id/navSetting"
+            android:icon="@drawable/drawer_settings"
+            android:title="@string/setting"/>
+        <item
+            android:id="@+id/navLogout"
+            android:icon="@drawable/drawer_logout"
+            android:title="@string/log_out"/>
+    </group>
+
+</menu>

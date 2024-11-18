@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.ChangeUserInfo"
+    android:background="#DAF8FB">
+
+    <TextView
+        android:text="@string/change_user_info"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#512F24"
+        android:textSize="35sp"
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/picture">
+
+        <ImageView
+
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/user_animation"/>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#616161"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/newFullNameFrame"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/newFullName"
+            android:inputType="textEmailAddress"
+            android:hint="@string/name_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#616161"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/birthFrame"
+        android:layout_below="@id/newFullNameFrame">
+
+        <EditText
+            android:id="@+id/birth"
+            android:inputType="datetime"
+            android:hint="@string/birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/birthFrame"
+        android:id="@+id/gender">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nam"
+            android:textColor="@color/black"
+            android:id="@+id/nam"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nu"
+            android:textColor="@color/black"
+            android:id="@+id/nu"
+            />
+    </RadioGroup>
+    <Button
+        android:id="@+id/changeNowBtn"
+        android:text="@string/change_now"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender"
+        android:layout_marginTop="30dp"
+        />
+</RelativeLayout>
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/editArticleToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B9D6F3"
+        android:padding="10dp"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="@string/backbtn"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_article_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit your content here"
+        android:minHeight="200dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_background" />
+
+    <ImageView
+        android:id="@+id/edit_article_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/button_choose_image"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Choose Image"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Update"
+        android:layout_marginTop="5dp" />
+</LinearLayout>
